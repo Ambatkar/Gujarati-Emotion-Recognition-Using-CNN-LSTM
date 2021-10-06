@@ -14,8 +14,8 @@ else:
     t_query = 'Covid'
     t_date = '2021-06-28'
     
-consumer_key = "0fRXaAPj6867PZ6xQVWdbGvne"
-consumer_secret = "5LTYwsE8W81ZNFyrSszCEl0T6SkHXVflFajBeXXuEnKPEVY4lQ"
+consumer_key = "Enter_Your_key_Here"
+consumer_secret = "Enter_Your_Secret_key_Here"
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(auth.access_token, auth.access_token_secret)
 api = tweepy.API(auth)
