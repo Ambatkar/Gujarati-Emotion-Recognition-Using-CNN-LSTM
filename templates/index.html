@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Emotion Analysis</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <nav class="navbar">          
+            <ul>
+                <li><img src="{{ url_for('static',filename='photo/logo.png') }}" alt="Logo"></li>
+                <div>
+                    <a href="#"><li>Home</li></a>
+                   <a href="#"> <li>API</li></a>
+                   <a href="#"><li>Docs</li></a>
+                </div>
+            </ul>
+        </nav>
+        <header class="main-section">
+            <img src="{{ url_for('static',filename='photo/emo-bg.svg') }}" class="emo-img">
+            <div class=""></div>
+            <div class="text-input">
+			<form action="{{ url_for('my_post') }}" method="post">
+                <input type="text" placeholder="Enter your sentence" name="texta"><input type="submit" value="Analyse">
+			</form>
+            </div>
+        </header>
+
+
+        <section class="footer-section">
+
+        </section>
+        <script src="" async defer></script>
+    </body>
+</html>
